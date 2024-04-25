@@ -5,7 +5,10 @@
 
     buttonSet.addEventListener("click", () => {
         event.preventDefault();
-        calculatorIMC.calcular(peso, altura);
+
+        if(!(peso.value == '' || altura.value == '')) {
+            calculatorIMC.calcular(peso, altura);
+        }
     });
 })();
 
