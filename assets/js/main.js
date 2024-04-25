@@ -3,7 +3,7 @@
     const altura = document.querySelector("#alturaInput");
     const buttonSet = document.querySelector("#enviar");
 
-    buttonSet.addEventListener("click", () => {
+    buttonSet.addEventListener("click", (event) => {
         event.preventDefault();
 
         if (!(peso.value == '' || altura.value == '')) {
