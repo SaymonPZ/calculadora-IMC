@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --primaryColor: rgb(255, 243, 216);
+    --primaryColor: rgb(250, 233, 192);
 }
 
 * {
@@ -18,14 +18,17 @@ body {
     font-size: 1.3em;
     line-height: 1.5em;
 }
+h3{
+    margin: 0;
+}
 
-#container {
+.container {
     max-width: 640px;
     margin: 50px auto;
     background: #fff;
     padding: 20px;
     border-radius: 20px;    
-    box-shadow: 10px 10px 20px 0px #b1b1b1;
+    box-shadow: 10px 10px 10px 0px #00000027;
 }
 
 form input,
@@ -51,7 +54,7 @@ form button {
     height: 50px;
     width: 100px;
     margin: 20px 0 auto auto;
-    background: #d4d4d4;
+    background: #ececec;
     font-size: 20px;
     border-radius: 10px;
     transition: background 0.2s ease-in-out, border-radius 0.2s ease-in-out;
@@ -60,4 +63,16 @@ form button {
 form button:hover {
     background: var(--primaryColor);
     border-radius: 20px;
+}
+.colorResults {
+    background: #fff;
+    transition: background 0.2s ease-in-out;
+}
+
+.resultado{
+    line-height: 0px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 100;
 }
